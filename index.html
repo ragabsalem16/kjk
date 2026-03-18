@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع بورتفوليو جذاب | Modern Portfolio</title>
+    <meta name="description" content="موقع بورتفوليو شخصي متكامل وجذاب بالـ HTML CSS JS">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- RTL/LTR Toggle -->
+    <button id="langToggle" class="lang-toggle">
+        <i class="fas fa-language"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <span>Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">نبذة</a></li>
+                <li><a href="#portfolio">المشاريع</a></li>
+                <li><a href="#contact">اتصال</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                مرحباً، أنا <span class="highlight">مطور ويب</span>
+            </h1>
+            <p class="hero-desc">
+                أصمم وأبني مواقع ويب جذابة ومتجاوبة باستخدام أحدث التقنيات
+            </p>
+            <div class="typing-animation"></div>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">
+                    <i class="fas fa-eye"></i> شاهد أعمالي
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> تواصل معي
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-placeholder">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">نبذة عني</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        مطور ويب شغوف ببناء تجارب رقمية مذهلة. أمتلك خبرة 3+ سنوات في HTML, CSS, JavaScript, وأطر العمل الحديثة مثل React و Vue.js.
+                    </p>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">أحدث المشاريع</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop" alt="E-commerce">
+                        <div class="portfolio-overlay">
+                            <h3>متجر إلكتروني</h3>
+                            <p>تصميم متجاوب مع أداء عالي</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="link-demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="link-code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop" alt="Dashboard">
+                        <div class="portfolio-overlay">
+                            <h3>لوحة تحكم</h3>
+                            <p>نظام إدارة بيانات تفاعلي</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="link-demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="link-code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="Landing">
+                        <div class="portfolio-overlay">
+                            <h3>صفحة هبوط</h3>
+                            <p>تصميم عصري مع تحويلات عالية</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="link-demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="link-code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop" alt="App">
+                        <div class="portfolio-overlay">
+                            <h3>تطبيق ويب</h3>
+                            <p>PWA متجاوب مع Service Workers</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="link-demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="link-code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Portfolio">
+                        <div class="portfolio-overlay">
+                            <h3>بورتفوليو</h3>
+                            <p>هذا الموقع الذي تراه الآن!</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="link-demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="link-code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" alt="Blog">
+                        <div class="portfolio-overlay">
+                            <h3>مدونة تفاعلية</h3>
+                            <p>محرك بحث + تصميم عصري</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="link-demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="link-code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">تواصل معي</h2>
+            <p class="section-subtitle">دعنا نعمل معاً على مشروعك القادم!</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="اسمك" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="موضوع الرسالة" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="6" placeholder="رسالتك هنا..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                </button>
+            </form>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>hello@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+20 123 456 789</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>القاهرة، مصر</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2024 Portfolio. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
